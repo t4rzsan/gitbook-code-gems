@@ -24,9 +24,19 @@ CREATE TABLE Customer
     CONSTRAINT PK_Customer_CustomerID PRIMARY KEY CLUSTERED (CustomerID)
 )
 
-ADD CONSTRAINT FK_Order_Customer FOREIGN KEY (CustomerID)     
-    REFERENCES Customer (CustomerID) 
+CREATE TABLE Order
+(
+    OrderID INT NOT NULL,
+    CustomerID INT NOT NULL,
+    CONSTRAINT PK_Order_OrderID PRIMARY KEY CLUSTERED (OrderID)
+)
+
+ALTER TABLE 
+    ADD CONSTRAINT FK_Order_Customer FOREIGN KEY (CustomerID)     
+    REFERENCES Customer (CustomerID)
 ```
+
+
 
 
 
