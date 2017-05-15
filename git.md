@@ -10,13 +10,15 @@ git clone https://github.com/t4rzsan/icsharp.git
 
 This will create a subfolder of the current folder name "aspnet-core-with-webpack" containing all the code.
 
+## Submodules
+
+### Cloning submodules
+
 If the repo contains submodules, and you want to bring the code in the submodules down, you'll need to clone recursively.
 
 ```
 git clone --recursive https://github.com/t4rzsan/icsharp.git
 ```
-
-## Submodules
 
 ### Change submodule to own fork
 
@@ -24,8 +26,8 @@ If you have cloned a repo with a submodule and you want to change the submodule 
 
 ```
 [submodule "Engine"]
-	path = Engine
-	url = https://github.com/scriptcs/scriptcs.git
+    path = Engine
+    url = https://github.com/scriptcs/scriptcs.git
 ```
 
 After saving .gitsubmodule, run the command.
@@ -39,8 +41,6 @@ It seems that this may detach from HEAD, so a checkout may be necessary \(before
 ```
 git checkout
 ```
-
-
 
 
 
