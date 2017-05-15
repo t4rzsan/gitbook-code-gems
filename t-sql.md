@@ -36,7 +36,11 @@ ALTER TABLE
     REFERENCES Customer (CustomerID)
 ```
 
+## NULL
 
+Try to avoid columns that allow NULL.
+
+Never compare a value to NULL using "=", "&lt;&gt;", nor "IN".  This may lead to unpredictable results.  Always use IS NULL or NOT IS NULL.
 
 
 
