@@ -1,4 +1,4 @@
 # Code Gems
 
-This books contains tips and tricks related to coding.
+This books contains guides, tips and tricks related to coding.
 
