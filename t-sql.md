@@ -16,6 +16,8 @@ CREATE TABLE Customer
 
 Postfix id columns with "ID", e.g. CustomerID.
 
+Never use underscores in names.
+
 ## Defining constraints
 
 Create keys and contraints as named constraints.
