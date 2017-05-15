@@ -51,5 +51,5 @@ To change the default editor for commit messages to Notepad++, open the file .gi
     editor = 'C:/put-your-folder-here/Notepad++/notepad++.exe' -multiInst -notabbar
 ```
 
-
+From now on Notepad++ will open when ever you run git commit without the -m switch.
 
