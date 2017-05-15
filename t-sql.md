@@ -1,5 +1,7 @@
 # Coding Standards: T-SQL
 
+## Naming
+
 Some guidelines for writing T-SQL in random order.
 
 Use camel notation and capitalize the first letter for tables, views, parameters, and column names.  Do not pluralize names for tables and views.
@@ -13,6 +15,8 @@ CREATE TABLE Customer
 ```
 
 Postfix id columns with "ID", e.g. CustomerID.
+
+## Defining constraints
 
 Create keys and contraints as named constraints.
 
@@ -41,6 +45,4 @@ ALTER TABLE
 Try to avoid columns that allow NULL.
 
 Never compare a value to NULL using "=", "&lt;&gt;", nor "IN".  This may lead to unpredictable results.  Always use IS NULL or NOT IS NULL.
-
-
 
