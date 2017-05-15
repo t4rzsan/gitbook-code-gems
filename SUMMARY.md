@@ -4,5 +4,5 @@
 * [Git](git.md)
 * Coding Standards
   * C\#
-  * T-SQL
+  * [T-SQL](t-sql.md)
 
