@@ -42,5 +42,14 @@ It seems that this may detach from HEAD, so a checkout may be necessary \(before
 git checkout
 ```
 
+## Change default editor to Notepad++
+
+To change the default editor for commit messages to Notepad++, open the file .gitconfig \(usually located under "c:\Users\\[user\]" on Windows\) and make sure it has a \[core\] section looking like this.
+
+```
+[core]
+	editor = 'C:/put-your-folder-here/Notepad++/notepad++.exe' -multiInst -notabbar 
+```
+
 
 
