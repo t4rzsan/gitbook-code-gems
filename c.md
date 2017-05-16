@@ -23,7 +23,7 @@ Use camel notation and use a capital letter for each new word: `GetPolicenummer`
 
 All names start with a capital letter, except for private instance member fields.
 
-Never use underscore underscore in a name.  Specifically, never prefix fields with an underscore.
+Never use underscore in a name.  Specifically, never prefix fields with an underscore.
 
 Prefix interfaces with an "I": `ICanDo`.
 
