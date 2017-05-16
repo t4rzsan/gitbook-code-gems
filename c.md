@@ -25,6 +25,8 @@ All names start with a capital letter, except for private instance member fields
 
 Never use underscore underscore in a name.  Specifically, never prefix fields with an underscore.
 
+Prefix interfaces with an "I": `ICanDo`.
+
 ## This
 
 Always use "this" when accessing members.
@@ -48,7 +50,7 @@ Remember to add modifiers.  Use `readonly` amply.
 
 ## Layout
 
-Indentation is 4 spaces.  
+Indentation is 4 spaces.
 
 Code blocks start with a line shift and a curly bracket.  Never use single line blocks without curly brackets.
 
