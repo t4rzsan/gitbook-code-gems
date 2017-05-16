@@ -3,8 +3,6 @@
 * [Introduction](README.md)
 * [Git](git.md)
 * Coding Standards
-  * C\#
+  * [C\#](c.md)
   * [T-SQL](t-sql.md)
-
-
 
