@@ -1,4 +1,4 @@
-# Coding Standards: C\
+# Coding Standards: C\#
 
 Standards for coding C\# in random order.
 
