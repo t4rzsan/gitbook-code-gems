@@ -85,6 +85,7 @@ FROM Customer
 JOIN Order
 ON Customer.CustomerID = Order.CustomerID
 
+-- Do
 select
 Customer.CustomerID
 , Customer.Name
@@ -92,7 +93,8 @@ from Customer
 join Order
 on Customer.CustomerID = Order.CustomerID
 
---
+-- Don't
+
 ```
 
 
