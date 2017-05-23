@@ -106,5 +106,27 @@ Join Order
 on Customer.CustomerID = Order.CustomerID
 ```
 
+## Aliases
+Try to use meaningful aliases for tables and not too many meaningless abbrevations. 
+Prefix your column names if there can be any doubt as to what table or view the column
+comes from.
 
+```sql
+-- Do
+SELECT
+Customer.CustomerID
+, Customer.Name
+FROM Customer
+JOIN Order
+ON Customer.CustomerID = Order.CustomerID
+
+-- Don't
+SELECT
+CustomerID
+, Name
+FROM Customer
+JOIN Order
+ON Customer.CustomerID = Order.CustomerID
+
+```
 
