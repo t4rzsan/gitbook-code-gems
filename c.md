@@ -1,4 +1,4 @@
-# Coding Standards: C\# 
+# Coding Standards: C\
 
 Standards for coding C\# in random order.
 
@@ -40,6 +40,11 @@ internal class Car
     {
         this.vin = vin;
         this.DoCarStuff();
+    }
+    
+    private void DoCarStuff()
+    {
+        // ...
     }
 }
 ```
