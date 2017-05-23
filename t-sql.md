@@ -42,8 +42,8 @@ CREATE TABLE Order
 )
 
 ALTER TABLE 
-    ADD CONSTRAINT FK_Order_Customer FOREIGN KEY (CustomerID)     
-    REFERENCES Customer (CustomerID)
+ADD CONSTRAINT FK_Order_Customer FOREIGN KEY (CustomerID)     
+REFERENCES Customer (CustomerID)
 ```
 
 ## NULL
