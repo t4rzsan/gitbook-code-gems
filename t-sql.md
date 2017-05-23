@@ -48,3 +48,52 @@ Try to avoid columns that allow NULL.
 
 Never compare a value to NULL using "=", "&lt;&gt;", nor "IN".  This may lead to unpredictable results.  Always use IS NULL or NOT IS NULL.
 
+## Commas
+
+In column lists, start a new line with a comma.
+
+```SQL
+SELECT
+CustomerID
+, Name
+FROM Customer
+```
+
+## Indentation
+
+There are many ways to layout your SQL. Please use whatever layout you prefer, must be consistent.  I usually left-align all kewords but indent nested SQL, such as CTEs and CASE statements.  But I always do it the same way.
+
+```SQL
+SELECT
+Customer.CustomerID
+, Customer.Name
+FROM Customer
+JOIN Order
+ON Customer.CustomerID = Order.CustomerID
+```
+
+## Casing
+
+Either use all-caps or non-caps for keywords.  Never mix them.
+
+```SQL
+-- Do
+SELECT
+Customer.CustomerID
+, Customer.Name
+FROM Customer
+JOIN Order
+ON Customer.CustomerID = Order.CustomerID
+
+select
+Customer.CustomerID
+, Customer.Name
+from Customer
+join Order
+on Customer.CustomerID = Order.CustomerID
+```
+
+
+
+
+
