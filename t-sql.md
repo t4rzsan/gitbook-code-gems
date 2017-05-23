@@ -98,6 +98,12 @@ join Order
 on Customer.CustomerID = Order.CustomerID
 
 -- Don't
+Select
+Customer.CustomerID
+, Customer.Name
+From Customer
+Join Order
+on Customer.CustomerID = Order.CustomerID
 ```
 
 
