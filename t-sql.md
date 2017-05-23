@@ -1,3 +1,7 @@
+# 
+
+# 
+
 # Coding Standards: T-SQL
 
 ## Naming
@@ -94,7 +98,6 @@ join Order
 on Customer.CustomerID = Order.CustomerID
 
 -- Don't
-
 ```
 
 
