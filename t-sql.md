@@ -56,7 +56,7 @@ Never compare a value to NULL using "=", "&lt;&gt;", nor "IN".  This may lead to
 
 In column lists, start a new line with a comma.
 
-```SQL
+```sql
 SELECT
 CustomerID
 , Name
@@ -67,7 +67,7 @@ FROM Customer
 
 There are many ways to layout your SQL. Please use whatever layout you prefer, must be consistent.  I usually left-align all kewords but indent nested SQL, such as CTEs and CASE statements.  But I always do it the same way.
 
-```SQL
+```sql
 SELECT
 Customer.CustomerID
 , Customer.Name
@@ -80,7 +80,7 @@ ON Customer.CustomerID = Order.CustomerID
 
 Either use all-caps or non-caps for keywords.  Never mix them.
 
-```SQL
+```sql
 -- Do
 SELECT
 Customer.CustomerID
