@@ -2,11 +2,15 @@
 
 Standards for coding C\# in random order.
 
+## StyleCop
+
+Do use StyleCop to enforce conventions and standards.
+
 ## Naming
 
 You can use Danish and English, and you are free to mix them.
 
-Start metod names with a verb.
+Start metod names with a verb in imperative mode \(bydeform\).
 
 ```
 public string GetPolicenummer()
@@ -21,7 +25,12 @@ Use camel notation and use a capital letter for each new word: `GetPolicenummer`
 
 All names start with a capital letter, except for private instance member fields.
 
-Never use underscore in a name.  As a special case, never prefix fields with an underscore.
+```Csharp
+public const int MyConstant = 42;
+private int myInstanceField;
+```
+
+Never use underscores in a name.  As a special case, never prefix fields with an underscore.
 
 Prefix interfaces with an "I": `ICanDo`.
 
