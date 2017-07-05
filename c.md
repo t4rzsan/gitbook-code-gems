@@ -68,14 +68,29 @@ internal class Car
 
 Remember to add modifiers.  Use `readonly` amply.
 
+Alway make instance fields private.  Expose internal state only through properties and avoid property setters as much as possible.
+
+Constants may be non-private.
+
+**Do:**
+
 ```
 public class Car
 {
+    public const int NumberOfWheels = 4;
     private readonly string vin;
 
     public Car(string vin)
     {
         this.vin = vin;
+    }
+    
+    public int Vin
+    {
+        get
+        {
+            return this.vin;
+        }
     }
 }
 ```
