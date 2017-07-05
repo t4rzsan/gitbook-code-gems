@@ -147,20 +147,5 @@ JOIN Order
 ON Customer.CustomerID = Order.CustomerID
 ```
 
-## WHERE clauses
-
-Never use WHERE clauses for outer joins.  This will effectively turn the outer join into an inner join. The right way is to put the condition into the ON clause of the join.
-
-**Do:**
-
-```sql
-SELECT 
-Customer.CustomerID
-FROM Customer
-LEFT OUTER JOIN Order
-ON Customer.CustomerID = Order.CustomerID
-AND Order.Type = 'Porsche'
-```
-
 
 
