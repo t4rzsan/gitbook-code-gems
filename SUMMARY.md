@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Git](git.md)
-* Coding Standards
+* [Coding Standards](coding-standards.md)
   * [C\#](c.md)
   * [T-SQL](t-sql.md)
 

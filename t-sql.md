@@ -1,8 +1,8 @@
 # Coding Standards: T-SQL
 
-## Naming
-
 Some guidelines for writing T-SQL in random order.
+
+## Naming
 
 Use camel notation and capitalize the first letter for tables, views, parameters, and column names.  Do not pluralize names for tables and views.
 
