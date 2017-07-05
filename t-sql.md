@@ -65,7 +65,7 @@ FROM Customer
 
 ## Indentation
 
-There are many ways to layout your SQL. Please use whatever layout you prefer, must be consistent.  I usually left-align all kewords but indent nested SQL, such as CTEs and CASE statements.  But I always do it the same way.
+There are many ways to layout your SQL. Please use whatever layout you prefer, but be consistent.  I usually left-align all kewords but indent nested SQL, such as CTEs and CASE statements.  But I always do it the same way.
 
 ```sql
 SELECT
@@ -107,8 +107,9 @@ on Customer.CustomerID = Order.CustomerID
 ```
 
 ## Aliases
-Try to use meaningful aliases for tables and not too many meaningless abbrevations. 
-Prefix your column names if there can be any doubt as to what table or view the column
+
+Try to use meaningful aliases for tables and not too many meaningless abbrevations.   
+Prefix your column names if there can be any doubt as to what table or view the column  
 comes from.
 
 ```sql
@@ -127,6 +128,7 @@ CustomerID
 FROM Customer
 JOIN Order
 ON Customer.CustomerID = Order.CustomerID
-
 ```
+
+
 
