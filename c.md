@@ -8,7 +8,7 @@ Do use StyleCop to enforce conventions and standards.
 
 Check out the [GitHub StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) repository on how to install StyleCop into your project.
 
-After installation, you need to add a ruleset fil to your project. The official AT StyleCop ruleset file is located in TFS on this path: $/AT/Udvikling/Core/Main/AT.ruleset.  Copy the file and add it to your solution i Visual Studio.
+After installation, you need to add a ruleset fil to your project. The official AT StyleCop ruleset file is located in TFS on this path: $/AT/Udvikling/Core/Main/AT.ruleset.  Copy the file and add it to your solution in Visual Studio.
 
 To add the ruleset file to a project, right-click the project in Visual Studio and click "Properties".  On the left, choose "Code Analysis".  In the dropdown click "Browse" and choose the AT.ruleset file.
 
