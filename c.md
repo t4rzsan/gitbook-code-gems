@@ -70,9 +70,22 @@ Remember to add modifiers.  Use `readonly` amply.
 
 ## Layout
 
+### Indentation
+
 Indentation is 4 spaces which is the default in Visual Studio.
 
+### Blocks
+
 Code blocks start with a line shift and a curly bracket.  Never use single line blocks without curly brackets.
+
+**Do:**
+
+```
+if (a == 0)
+{
+    this.DoStuff();
+}
+```
 
 **Don't:**
 
@@ -87,14 +100,61 @@ if (a == 0)
     this.DoStuff();
 ```
 
+### Whitespace
+
+Use spaces before and after operators. 
+
+#### Operators
+
 **Do:**
 
 ```
-if (a == 0)
+int a = (b + c) * 10;
+```
+
+**Don't:**
+
+```
+int a=(b+c)*10;
+```
+
+#### Parentheses
+
+Avoid spaces before and after parentheses in parameter lists.
+
+**Do:**
+
+```
+public void DoStuff(int parameter1)
 {
-    this.DoStuff();
+    // ...
 }
 ```
+
+**Don't:**
+
+```
+public void DoStuff ( int parameter1 )
+{
+    // ...
+}
+```
+
+Put a space in front of a parenthesis in formulaes.
+
+**Do:**
+
+```
+int a = 10 * (b + c) + 11;
+```
+
+**Don't:**
+
+```
+int a = 10 *( b + c )+ 11;
+```
+
+
 
 ## Files
 
