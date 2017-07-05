@@ -64,17 +64,32 @@ FROM Customer
 There are many ways to layout your SQL. Please use whatever layout you prefer, but be consistent.  I usually left-align all kewords but indent nested SQL, such as CTEs and CASE statements.  But I always do it the same way.
 
 ```sql
+WITH OrderTotal (CustomerID, TotalAmount)
+AS
+(
+    SELECT CustomerID
+    , SUM(Amount) Total
+    FROM Order
+    GROUP BY CustomerID
+)
 SELECT
 Customer.CustomerID
 , Customer.Name
+, OrderTotal.TotalAmount
+, CASE 
+    WHEN Custom.SomeFlag = 1 THEN 'Yes'
+    ELSE 'No'
+END YesNo
 FROM Customer
-JOIN Order
-ON Customer.CustomerID = Order.CustomerID
+JOIN OrderTotal
+ON Customer.CustomerID = OrderTotal.CustomerID
 ```
 
 ## Casing
 
 Either use all-caps or non-caps for keywords.  Never mix them.
+
+**Do:**
 
 ```sql
 -- Do
@@ -84,16 +99,22 @@ Customer.CustomerID
 FROM Customer
 JOIN Order
 ON Customer.CustomerID = Order.CustomerID
+```
 
--- Do
+**Do:**
+
+```sql
 select
 Customer.CustomerID
 , Customer.Name
 from Customer
 join Order
 on Customer.CustomerID = Order.CustomerID
+```
 
--- Don't
+**Don't:**
+
+```sql
 Select
 Customer.CustomerID
 , Customer.Name
@@ -125,6 +146,12 @@ FROM Customer
 JOIN Order
 ON Customer.CustomerID = Order.CustomerID
 ```
+
+## WHERE clauses
+
+Never use WHERE clauses for outer joins.  This will effectively turn the outer join into an inner join.
+
+
 
 
 
