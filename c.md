@@ -102,7 +102,7 @@ if (a == 0)
 
 ### Whitespace
 
-Use spaces before and after operators. 
+Use spaces before and after operators.
 
 #### Operators
 
@@ -154,7 +154,21 @@ int a = 10 * (b + c) + 11;
 int a = 10 *( b + c )+ 11;
 ```
 
+#### Casts
 
+Do not leave a blank after a cast.
+
+**Do:**
+
+```
+int a = (int)b;
+```
+
+**Don't:**
+
+```
+int a = (int) b;
+```
 
 ## Files
 
