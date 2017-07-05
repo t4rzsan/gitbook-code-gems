@@ -62,7 +62,7 @@ Remember to add modifiers.  Use `readonly` amply.
 
 ## Layout
 
-Indentation is 4 spaces.
+Indentation is 4 spaces which is the default in Visual Studio.
 
 Code blocks start with a line shift and a curly bracket.  Never use single line blocks without curly brackets.
 
