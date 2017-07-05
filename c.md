@@ -69,7 +69,7 @@ internal class Car
 Remember to add modifiers.  Use `readonly` amply.
 
 ```
-internal class Car
+public class Car
 {
     private readonly string vin;
 
