@@ -20,7 +20,7 @@ You can use Danish and English, and you are free to mix them.
 
 Start metod names with a verb in imperative mode \(bydeform\).
 
-```
+```csharp
 public string GetPolicenummer()
 {
     // ...
@@ -33,7 +33,7 @@ Use camel notation and use a capital letter for each new word: `GetPolicenummer`
 
 All names start with a capital letter, except for private instance member fields.
 
-```Csharp
+```csharp
 public const int MyConstant = 42;
 private int myInstanceField;
 ```
@@ -46,7 +46,7 @@ Prefix interfaces with an "I": `ICanDo`.
 
 Always use "this" when accessing members.
 
-```C\#
+```csharp
 internal class Car
 {
     private readonly string vin;
@@ -74,7 +74,7 @@ Constants may be non-private.
 
 **Do:**
 
-```
+```csharp
 public class Car
 {
     public const int NumberOfWheels = 4;
@@ -107,7 +107,7 @@ Code blocks start with a line shift and a curly bracket.  Never use single line 
 
 **Do:**
 
-```
+```csharp
 if (a == 0)
 {
     this.DoStuff();
@@ -116,13 +116,13 @@ if (a == 0)
 
 **Don't:**
 
-```
+```csharp
 if (a == 0) {
     this.DoStuff();
 }
 ```
 
-```
+```csharp
 if (a == 0)
     this.DoStuff();
 ```
@@ -135,13 +135,13 @@ Use spaces before and after operators.
 
 **Do:**
 
-```
+```csharp
 int a = (b + c) * 10;
 ```
 
 **Don't:**
 
-```
+```csharp
 int a=(b+c)*10;
 ```
 
@@ -151,7 +151,7 @@ Avoid spaces before and after parentheses in parameter lists.
 
 **Do:**
 
-```
+```csharp
 public void DoStuff(int parameter1)
 {
     // ...
@@ -160,7 +160,7 @@ public void DoStuff(int parameter1)
 
 **Don't:**
 
-```
+```csharp
 public void DoStuff ( int parameter1 )
 {
     // ...
@@ -171,13 +171,13 @@ Put a space in front of a parenthesis in formulaes.
 
 **Do:**
 
-```
+```csharp
 int a = 10 * (b + c) + 11;
 ```
 
 **Don't:**
 
-```
+```csharp
 int a = 10 *( b + c )+ 11;
 ```
 
@@ -187,13 +187,13 @@ Do not leave a blank after a cast.
 
 **Do:**
 
-```
+```csharp
 int a = (int)b;
 ```
 
 **Don't:**
 
-```
+```csharp
 int a = (int) b;
 ```
 
