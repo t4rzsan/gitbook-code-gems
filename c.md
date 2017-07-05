@@ -1,4 +1,4 @@
-# Coding Standards: C\
+# Coding Standards: C\#
 
 Standards for coding C\# in random order.
 
@@ -41,7 +41,7 @@ internal class Car
         this.vin = vin;
         this.DoCarStuff();
     }
-    
+
     private void DoCarStuff()
     {
         // ...
@@ -80,6 +80,12 @@ if (a == 0)
     this.DoStuff();
 }
 ```
+
+## Files
+
+Create a new file for each type \(class, interface, enum\).  The name of the type much match the name of the file.
+
+Delegates are technically types but there is no need to create a new file for each delegate.
 
 
 
