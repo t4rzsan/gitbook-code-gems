@@ -4,9 +4,11 @@ Standards for coding C\# in random order.
 
 ## StyleCop
 
-Do use StyleCop to enforce conventions and standards. The official StyleCop ruleset file is located in TFS on this path: $/AT/Udvikling/Core/Main/AT.ruleset.
+Do use StyleCop to enforce conventions and standards.
 
 Check out the [GitHub StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) repository on how to install StyleCop.
+
+The official StyleCop ruleset file is located in TFS on this path: $/AT/Udvikling/Core/Main/AT.ruleset.
 
 ## Naming
 
