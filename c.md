@@ -2,8 +2,6 @@
 
 Standards for coding C\# in random order.
 
-Why do we need coding standards? To make the code easily readable and recognizable.
-
 ## Naming
 
 You can use Danish and English, and you are free to mix them.
