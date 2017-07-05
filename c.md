@@ -1,4 +1,4 @@
-# Coding Standards: C\#
+# Coding Standards: Csharp
 
 Standards for coding C\# in random order.
 
@@ -86,6 +86,4 @@ if (a == 0)
 Create a new file for each type \(class, interface, enum\).  The name of the type much match the name of the file.
 
 Delegates are technically types but there is no need to create a new file for each delegate.
-
-
 
