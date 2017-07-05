@@ -1,6 +1,6 @@
 # Coding Standards: T-SQL
 
-Some guidelines for writing T-SQL in random order.
+Standards for T-SQL in random order.
 
 ## Naming
 
