@@ -31,7 +31,7 @@ Prefix interfaces with an "I": `ICanDo`.
 
 Always use "this" when accessing members.
 
-```
+```C\#
 internal class Car
 {
     private readonly string vin;
