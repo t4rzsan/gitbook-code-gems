@@ -102,9 +102,9 @@ if (a == 0)
 
 ### Whitespace
 
-Use spaces before and after operators.
-
 #### Operators
+
+Use spaces before and after operators.
 
 **Do:**
 
