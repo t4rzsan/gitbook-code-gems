@@ -68,7 +68,7 @@ internal class Car
 
 Remember to add modifiers.  Use `readonly` amply.
 
-Alway make instance fields private.  Expose internal state only through properties and avoid property setters as much as possible.
+Alway make instance fields private.  Expose internal state only through properties and add property setters only if absolutely necessary.
 
 Constants may be non-private.
 
@@ -84,7 +84,7 @@ public class Car
     {
         this.vin = vin;
     }
-    
+
     public int Vin
     {
         get
