@@ -129,22 +129,38 @@ Try to use meaningful aliases for tables and not too many meaningless abbrevatio
 Always prefix your column names with table/view/alias so  it is clear to any reader where the column  
 is coming from.
 
+**Do:**
+
 ```sql
--- Do
 SELECT
 Customer.CustomerID
 , Customer.Name
 FROM Customer
 JOIN Order
 ON Customer.CustomerID = Order.CustomerID
+```
 
--- Don't
+**Don't:**
+
+```sql
 SELECT
 CustomerID
 , Name
 FROM Customer
 JOIN Order
 ON Customer.CustomerID = Order.CustomerID
+```
+
+**Don't:**
+
+```sql
+SELECT
+c.CustomerID
+, c.Name
+FROM Customer c
+JOIN Order
+ON Customer.CustomerID = Order.CustomerID
+
 ```
 
 
