@@ -126,8 +126,8 @@ on Customer.CustomerID = Order.CustomerID
 ## Aliases
 
 Try to use meaningful aliases for tables and not too many meaningless abbrevations.  
-Prefix your column names if there can be any doubt as to what table or view the column  
-comes from.
+Always prefix your column names with table/view/alias so  it is clear to any reader where the column  
+is coming from.
 
 ```sql
 -- Do
