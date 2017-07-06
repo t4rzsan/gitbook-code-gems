@@ -46,7 +46,7 @@ REFERENCES Customer (CustomerID)
 
 Try to avoid columns that allow NULL.
 
-Never compare a value to NULL using "=", "&lt;&gt;", nor "IN".  This may lead to unpredictable results.  Always use IS NULL or NOT IS NULL.
+Never compare a value to NULL using "=", "&lt;&gt;", "NOT IN" nor "IN".  This may lead to unpredictable results.  Always use EXISTS, NOT EXISTS, IS NULL or NOT IS NULL.
 
 ## Commas
 
