@@ -160,8 +160,15 @@ c.CustomerID
 FROM Customer c
 JOIN Order
 ON Customer.CustomerID = Order.CustomerID
-
 ```
+
+## More
+
+Read this series for best practice on how to use T-SQL:
+
+[https://www.simple-talk.com/sql/t-sql-programming/basics-good-t-sql-coding-style/](https://www.simple-talk.com/sql/t-sql-programming/basics-good-t-sql-coding-style/)
+
+
 
 
 
