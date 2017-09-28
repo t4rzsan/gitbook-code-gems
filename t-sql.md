@@ -162,13 +162,24 @@ JOIN Order
 ON Customer.CustomerID = Order.CustomerID
 ```
 
+The following aliases for common dimensions and facts tables are allowed when writing SQL for the datawarehouse:
+
+| Abbreviation | Table Name |
+| :--- | :--- |
+| DP | Dimensions.Police \(use another alias for Dimensions.Person\) |
+| DD | Dimensions.Dækning |
+| DG | Dimensions.Grundform |
+| DO | Dimensions.Overenskomst |
+| DF | Dimensions.Fond |
+| DR | Dimensions.Rentegruppe |
+| DPS | Dimensions.PoliceStatus |
+| FP | Facts.Police |
+| FF | Facts.Fond |
+| FV | Facts.Vederlag |
+
 ## More
 
 Read this series for best practice on how to use T-SQL:
 
 [https://www.simple-talk.com/sql/t-sql-programming/basics-good-t-sql-coding-style/](https://www.simple-talk.com/sql/t-sql-programming/basics-good-t-sql-coding-style/)
-
-
-
-
 
