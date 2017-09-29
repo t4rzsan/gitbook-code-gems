@@ -166,7 +166,8 @@ The following aliases for common dimensions and facts tables are allowed when wr
 
 | Abbreviation | Table Name |
 | :--- | :--- |
-| DP | Dimensions.Police \(use another alias for Dimensions.Person\) |
+| DP | Dimensions.Police |
+| DPE | Dimensions.Person |
 | DD | Dimensions.Dækning |
 | DG | Dimensions.Grundform |
 | DO | Dimensions.Overenskomst |
