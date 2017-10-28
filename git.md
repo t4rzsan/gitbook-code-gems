@@ -42,6 +42,12 @@ It seems that this may detach from HEAD, so a checkout may be necessary \(before
 git checkout
 ```
 
+If you have trouble downloading the code for the submodule, try running the command:
+
+```
+git submodule update --remote
+```
+
 ## Change default editor
 
 To change the default editor for commit messages to Notepad++, open the file .gitconfig \(usually located under "c:\Users\\[user\]" on Windows\) and make sure it has a \[core\] section looking like this.
