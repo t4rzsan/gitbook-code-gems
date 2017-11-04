@@ -59,3 +59,27 @@ To change the default editor for commit messages to Notepad++, open the file .gi
 
 From now on Notepad++ will open when ever you run git commit without the -m switch.
 
+## Compare to remote
+
+Start by fetching all from the remote repo:
+
+```
+git fetch origin
+```
+
+Then compare with local:
+
+```
+git log HEAD..origin/master --oneline
+```
+
+If you are happy with the result, you may merge the remote changes with the local repo:
+
+```
+git merge
+```
+
+
+
+
+
