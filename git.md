@@ -73,13 +73,11 @@ Then compare with local:
 git log HEAD..origin/master --oneline
 ```
 
-If you are happy with the result, you may merge the remote changes with the local repo:
+If you are happy with the results, you may merge the remote changes with the local repo:
 
 ```
 git merge
 ```
-
-
 
 
 
