@@ -79,5 +79,35 @@ If you are happy with the results, you may merge the remote changes with the loc
 git merge
 ```
 
+## Delete branch
+
+Delete the remote branch:
+
+```
+git push -d <remote_name> <branch_name>
+```
+
+For example:
+
+```
+git push -d origin my-feature-branch
+```
+
+You may also use:
+
+```
+git push <remote_name> :<branch_name>
+```
+
+Delete the local branch:
+
+´\` 
+
+```
+git branch -d <branch_name>
+```
+
+
+
 
 
