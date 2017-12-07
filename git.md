@@ -101,11 +101,31 @@ git push <remote_name> :<branch_name>
 
 Delete the local branch:
 
-´\` 
-
 ```
 git branch -d <branch_name>
 ```
+
+## Delete local changes
+
+Undo all unstaged local stanges:
+
+```
+git checkout .
+```
+
+Undo git add for at single file:
+
+```
+git reset folder/file.cs
+```
+
+Undo `git add .` :
+
+```
+git reset .
+```
+
+
 
 
 
