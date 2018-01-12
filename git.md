@@ -125,5 +125,15 @@ Undo `git add .` :
 git reset .
 ```
 
+## Fix untracked files
+
+```bash
+git rm . -r --cached
+git add .
+git commit -m "Fixed untracked files"
+```
+
+
+
 
 
