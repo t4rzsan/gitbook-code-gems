@@ -93,6 +93,12 @@ For at bit information you may use:
 git remote show origin
 ```
 
+I your remote has moved, you can change the URL using _set-url_:
+
+```
+git remote set-url origin https://hocuspocus@bitbucket.org/myteam/myproject.git
+```
+
 ## Delete branch
 
 Delete the remote branch:
