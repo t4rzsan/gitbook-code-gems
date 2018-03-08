@@ -79,6 +79,20 @@ If you are happy with the results, you may merge the remote changes with the loc
 git merge
 ```
 
+## Show remote
+
+Show remote URL for "origin":
+
+```
+git remote get-url origin
+```
+
+For at bit information you may use:
+
+```
+git remote show origin
+```
+
 ## Delete branch
 
 Delete the remote branch:
