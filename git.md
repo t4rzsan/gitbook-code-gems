@@ -71,21 +71,21 @@ From now on Notepad++ will open when ever you run git commit without the -m swit
 
 ```
 [diff]
-	tool = vsdiffmerge
+    tool = vsdiffmerge
 [difftool]
-	prompt = true
+    prompt = true
 [difftool "vsdiffmerge"]
-	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsDiffMerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
-	keepbackup = false
-	trustexistcode = true
+    cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsDiffMerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
+    keepbackup = false
+    trustexistcode = true
 [merge]
-	tool = vsdiffmerge
+    tool = vsdiffmerge
 [mergetool]
-	prompt = true
+    prompt = true
 [mergetool "vsdiffmerge"]
-	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsDiffMerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
-	keepbackup = false
-	trustexistcode = true
+    cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsDiffMerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+    keepbackup = false
+    trustexistcode = true
 ```
 
 ## Start merge tool
@@ -199,15 +199,15 @@ git config --global alias.a "add ."
 git config --global alias.c "commit"
 ```
 
-You can now just type `git a` to add unstaged files.  Aliases can also be added directly to the config file.
+You can now just type `git a` to add unstaged files.  
+
+Aliases can also be added directly to the config file.
 
 ```
 [alias]
-	a = add .
-	c = commit
+    a = add .
+    c = commit
 ```
-
-
 
 
 
