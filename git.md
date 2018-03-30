@@ -10,44 +10,6 @@ git clone https://github.com/hocuspocus/icsharp.git
 
 This will create a subfolder of the current folder name "aspnet-core-with-webpack" containing all the code.
 
-## Submodules
-
-### Cloning submodules
-
-If the repo contains submodules, and you want to bring the code in the submodules down, you'll need to clone recursively.
-
-```
-git clone --recursive https://github.com/hocuspocus/icsharp.git
-```
-
-### Change submodule to own fork
-
-If you have cloned a repo with a submodule and you want to change the submodule to a different fork \(if for example you have forked the submodul\), you need to edit the URL in the file .gitsubmodule.
-
-```
-[submodule "Engine"]
-    path = Engine
-    url = https://github.com/scriptcs/scriptcs.git
-```
-
-After saving .gitsubmodule, run the command.
-
-```
-git submodule sync
-```
-
-It seems that this may detach from HEAD, so a checkout may be necessary \(before making any local changes\).
-
-```
-git checkout
-```
-
-If you have trouble downloading the code for the submodule, try running the command:
-
-```
-git submodule update --remote
-```
-
 ## Edit configuration
 
 On Windows the Git configuration file is usually placed under "c:\Users\\[user\]".  You can also start an editor from the command prompt.
@@ -88,6 +50,44 @@ From now on Notepad++ will open when ever you run git commit without the -m swit
     trustexistcode = true
 ```
 
+## Submodules
+
+### Cloning submodules
+
+If the repo contains submodules, and you want to bring the code in the submodules down, you'll need to clone recursively.
+
+```
+git clone --recursive https://github.com/hocuspocus/icsharp.git
+```
+
+### Change submodule to own fork
+
+If you have cloned a repo with a submodule and you want to change the submodule to a different fork \(if for example you have forked the submodul\), you need to edit the URL in the file .gitsubmodule.
+
+```
+[submodule "Engine"]
+    path = Engine
+    url = https://github.com/scriptcs/scriptcs.git
+```
+
+After saving .gitsubmodule, run the command.
+
+```
+git submodule sync
+```
+
+It seems that this may detach from HEAD, so a checkout may be necessary \(before making any local changes\).
+
+```
+git checkout
+```
+
+If you have trouble downloading the code for the submodule, try running the command:
+
+```
+git submodule update --remote
+```
+
 ## Start merge tool
 
 If there is a merge tool, you can start your merge tool \(set in the config file\).
@@ -116,7 +116,7 @@ If you are happy with the results, you may merge the remote changes with the loc
 git merge
 ```
 
-## Show remote
+## Show remote URL
 
 Show remote URL for "origin":
 
