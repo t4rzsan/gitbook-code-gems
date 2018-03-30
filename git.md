@@ -190,7 +190,7 @@ git add .
 git commit -m "Fixed untracked files"
 ```
 
-## Create alias for a command
+## Create an alias for a command
 
 If you are tired of typing long hard-to-forget commands you can create aliases.
 
@@ -199,7 +199,7 @@ git config --global alias.a "add ."
 git config --global alias.c "commit"
 ```
 
-You can now just type `git a` to add unstaged files.  
+You can now just type `git a` to add unstaged files.
 
 Aliases can also be added directly to the config file.
 
