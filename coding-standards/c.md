@@ -1,4 +1,4 @@
-# Coding Standards: Csharp
+# C\#
 
 Standards for coding C\# in random order.
 
@@ -26,7 +26,7 @@ public const int MyConstant = 42;
 private int myInstanceField;
 ```
 
-Never use underscores in a name.  As a special case, never prefix fields with an underscore.
+Never use underscores in a name. As a special case, never prefix fields with an underscore.
 
 Prefix interfaces with an "I": `ICanDo`.
 
@@ -54,9 +54,9 @@ internal class Car
 
 ## Modifiers
 
-Remember to add modifiers.  Use `readonly` amply.
+Remember to add modifiers. Use `readonly` amply.
 
-Alway make instance fields private.  Expose internal state only through properties and add property setters only if absolutely necessary.
+Alway make instance fields private. Expose internal state only through properties and add property setters only if absolutely necessary.
 
 Constants may be non-private.
 
@@ -91,7 +91,7 @@ Indentation is 4 spaces which is the default in Visual Studio.
 
 ### Blocks
 
-Code blocks start with a line shift and a curly bracket.  Never use single line blocks without curly brackets.
+Code blocks start with a line shift and a curly bracket. Never use single line blocks without curly brackets.
 
 **Do:**
 
@@ -187,7 +187,7 @@ int a = (int) b;
 
 ## Files
 
-Create a new file for each type \(class, interface, enum\).  The name of the type much match the name of the file.
+Create a new file for each type \(class, interface, enum\). The name of the type much match the name of the file.
 
 Delegates are technically types but there is no need to create a new file for each delegate.
 
@@ -197,9 +197,9 @@ Do use StyleCop to enforce conventions and standards.
 
 Check out the [GitHub StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) repository on how to install StyleCop into your project.
 
-After installation, you need to add a ruleset fil to your project. The official AT StyleCop ruleset file is located in TFS on this path: $/AT/Udvikling/Core/Main/AT.ruleset.  Copy the file and add it to your solution in Visual Studio.
+After installation, you need to add a ruleset fil to your project. The official AT StyleCop ruleset file is located in TFS on this path: $/AT/Udvikling/Core/Main/AT.ruleset. Copy the file and add it to your solution in Visual Studio.
 
-To add the ruleset file to a project, right-click the project in Visual Studio and click "Properties".  On the left, choose "Code Analysis".  In the dropdown click "Browse" and choose the AT.ruleset file.
+To add the ruleset file to a project, right-click the project in Visual Studio and click "Properties". On the left, choose "Code Analysis". In the dropdown click "Browse" and choose the AT.ruleset file.
 
 StyleCop will now warn when you break the rules in your project.
 

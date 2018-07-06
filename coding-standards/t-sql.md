@@ -1,10 +1,10 @@
-# Coding Standards: T-SQL
+# T-SQL
 
 Standards for T-SQL in random order.
 
 ## Naming
 
-Use camel notation and capitalize the first letter for tables, views, parameters, and column names.  Do not pluralize names for tables and views.
+Use camel notation and capitalize the first letter for tables, views, parameters, and column names. Do not pluralize names for tables and views.
 
 ```sql
 CREATE TABLE Customer
@@ -46,7 +46,7 @@ REFERENCES Customer (CustomerID)
 
 Try to avoid columns that allow NULL.
 
-Never compare a value to NULL using "=", "&lt;&gt;", "NOT IN" nor "IN".  This may lead to unpredictable results.  Always use EXISTS, NOT EXISTS, IS NULL or NOT IS NULL.
+Never compare a value to NULL using "=", "&lt;&gt;", "NOT IN" nor "IN". This may lead to unpredictable results. Always use EXISTS, NOT EXISTS, IS NULL or NOT IS NULL.
 
 ## Commas
 
@@ -61,7 +61,7 @@ FROM Customer
 
 ## Indentation
 
-There are many ways to layout your SQL. Please use whatever layout you prefer, but be consistent.  I usually left-align all kewords but indent nested SQL, such as CTEs and CASE statements.  But I always do it the same way.
+There are many ways to layout your SQL. Please use whatever layout you prefer, but be consistent. I usually left-align all kewords but indent nested SQL, such as CTEs and CASE statements. But I always do it the same way.
 
 ```sql
 WITH OrderTotal (CustomerID, TotalAmount)
@@ -87,7 +87,7 @@ ON Customer.CustomerID = OrderTotal.CustomerID
 
 ## Casing
 
-Either use all-caps or non-caps for keywords.  Never mix them.
+Either use all-caps or non-caps for keywords. Never mix them.
 
 **Do:**
 
@@ -126,7 +126,7 @@ on Customer.CustomerID = Order.CustomerID
 ## Aliases
 
 Try to use meaningful aliases for tables and not too many meaningless abbrevations.  
-Always prefix your column names with table/view/alias so  it is clear to any reader where the column  
+Always prefix your column names with table/view/alias so it is clear to any reader where the column  
 is coming from.
 
 **Do:**
