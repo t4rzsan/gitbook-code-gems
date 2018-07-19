@@ -182,6 +182,22 @@ Undo `git add .` :
 git reset .
 ```
 
+## Undo latest commits
+
+To undo the latest commit\(s\) use reset.
+
+```bash
+git reset @~N
+```
+
+Here _N_ is the number of commits to undo.  To undo the latest commit use reset @~1.
+
+```bash
+git reset @~1
+```
+
+A reset will leave changed files unstaged.
+
 ## Fix untracked files
 
 ```bash
