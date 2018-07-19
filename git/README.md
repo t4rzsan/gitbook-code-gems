@@ -4,7 +4,7 @@
 
 Start by cloning a repo from Github or Bitbucket.org.
 
-```text
+```bash
 git clone https://github.com/hocuspocus/icsharp.git
 ```
 
@@ -14,7 +14,7 @@ This will create a subfolder of the current folder name "aspnet-core-with-webpac
 
 On Windows the Git configuration file is usually placed under "c:\Users\\[user\]". You can also start an editor from the command prompt.
 
-```text
+```bash
 git config --global -e
 ```
 
@@ -56,7 +56,7 @@ From now on Notepad++ will open when ever you run git commit without the -m swit
 
 If the repo contains submodules, and you want to bring the code in the submodules down, you'll need to clone recursively.
 
-```text
+```bash
 git clone --recursive https://github.com/hocuspocus/icsharp.git
 ```
 
@@ -72,19 +72,19 @@ If you have cloned a repo with a submodule and you want to change the submodule 
 
 After saving .gitsubmodule, run the command.
 
-```text
+```bash
 git submodule sync
 ```
 
 It seems that this may detach from HEAD, so a checkout may be necessary \(before making any local changes\).
 
-```text
+```bash
 git checkout
 ```
 
 If you have trouble downloading the code for the submodule, try running the command:
 
-```text
+```bash
 git submodule update --remote
 ```
 
@@ -92,7 +92,7 @@ git submodule update --remote
 
 If there is a merge tool, you can start your merge tool \(set in the config file\).
 
-```text
+```bash
 git mergetool
 ```
 
@@ -100,19 +100,19 @@ git mergetool
 
 Start by fetching all from the remote repo:
 
-```text
+```bash
 git fetch origin
 ```
 
 Then compare with local:
 
-```text
+```bash
 git log HEAD..origin/master --oneline
 ```
 
 If you are happy with the results, you may merge the remote changes with the local repo:
 
-```text
+```bash
 git merge
 ```
 
@@ -120,19 +120,19 @@ git merge
 
 Show remote URL for "origin":
 
-```text
+```bash
 git remote get-url origin
 ```
 
 For at bit information you may use:
 
-```text
+```bash
 git remote show origin
 ```
 
 I your remote has moved, you can change the URL using _set-url_:
 
-```text
+```bash
 git remote set-url origin https://hocuspocus@bitbucket.org/myteam/myproject.git
 ```
 
@@ -140,25 +140,25 @@ git remote set-url origin https://hocuspocus@bitbucket.org/myteam/myproject.git
 
 Delete the remote branch:
 
-```text
+```bash
 git push -d <remote_name> <branch_name>
 ```
 
 For example:
 
-```text
+```bash
 git push -d origin my-feature-branch
 ```
 
 You may also use:
 
-```text
+```bash
 git push <remote_name> :<branch_name>
 ```
 
 Delete the local branch:
 
-```text
+```bash
 git branch -d <branch_name>
 ```
 
@@ -166,19 +166,19 @@ git branch -d <branch_name>
 
 Undo all unstaged local changes:
 
-```text
+```bash
 git checkout .
 ```
 
 Undo git add for at single file:
 
-```text
+```bash
 git reset folder/file.cs
 ```
 
 Undo `git add .` :
 
-```text
+```bash
 git reset .
 ```
 
@@ -210,7 +210,7 @@ git commit -m "Fixed untracked files"
 
 If you are tired of typing long hard-to-forget commands you can create aliases.
 
-```text
+```bash
 git config --global alias.a "add ."
 git config --global alias.c "commit"
 ```
@@ -224,4 +224,6 @@ Aliases can also be added directly to the config file.
     a = add .
     c = commit
 ```
+
+
 
