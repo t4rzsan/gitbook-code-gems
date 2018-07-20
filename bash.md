@@ -12,7 +12,7 @@ Restart your Mac for changes to take effect.
 
 You may want to view the actual files in your iCloud folder \(also called "Mobile Documents". By default Finder won't let you view the files.
 
-```text
+```bash
 ln -s ~/Library/Mobile\ Documents/ ~/Desktop/Real\ iCloud\ Drive
 ```
 
