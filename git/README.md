@@ -136,6 +136,14 @@ I your remote has moved, you can change the URL using _set-url_:
 git remote set-url origin https://hocuspocus@bitbucket.org/myteam/myproject.git
 ```
 
+## Push new local branch to remote
+
+After creating a new local branch and adding files to it, you can push the whole thing to remote.
+
+```bash
+git push -u origin feature_branch_name
+```
+
 ## Delete branch
 
 Delete the remote branch:
