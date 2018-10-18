@@ -1,12 +1,26 @@
 # Bash
 
-## Clear user defaults for app
+## User Defaults
+
+### Clear user defaults for app
 
 ```bash
-defaults delete com.emailsignature.eMS365
+defaults delete com.emailsignature.Xink
 ```
 
-Restart your Mac for changes to take effect.
+You may have to restart your Mac for changes to take effect.
+
+### Read all user defaults for an app
+
+```text
+defaults read com.emailsignature.Xink
+```
+
+### Set user default value for an app
+
+```text
+defaults write com.emailsignature.Xink hideQuitMailInfobox -int 0
+```
 
 ## Show real iCloud folder on desktop
 
