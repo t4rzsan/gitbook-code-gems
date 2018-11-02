@@ -57,5 +57,11 @@ You can also use "stat".
 username='stat -f%Su /dev/console'
 ```
 
+## Reset automation \(AppleEvents\)
+
+```text
+tccutil reset AppleEvents
+```
+
 
 
