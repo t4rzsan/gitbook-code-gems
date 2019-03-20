@@ -116,7 +116,7 @@ If you are happy with the results, you may merge the remote changes with the loc
 git merge
 ```
 
-## Show remote URL
+## Get and set remote URL
 
 Show remote URL for "origin":
 
