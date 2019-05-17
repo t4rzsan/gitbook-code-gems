@@ -22,6 +22,12 @@ defaults read com.emailsignature.Xink
 defaults write com.emailsignature.Xink hideQuitMailInfobox -int 0
 ```
 
+### Delete named default value for an app
+
+```bash
+defaults delete com.emailsignature.Xink hideQuiMailInfobox
+```
+
 ## Show real iCloud folder on desktop
 
 You may want to view the actual files in your iCloud folder \(also called "Mobile Documents". By default Finder won't let you view the files.
