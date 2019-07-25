@@ -50,6 +50,16 @@ From now on Notepad++ will open when ever you run git commit without the -m swit
     trustexistcode = true
 ```
 
+### Set pager to UTF-8
+
+Output from Git may have problems showing Danish letters, for example for `git branch`.  Add the following to the \[core\] section of your global .gitconfig file:
+
+![Danish letters not showing correctly in cmd prompt](../.gitbook/assets/udklip.PNG)
+
+```text
+pager = LESSCHARSET=utf-8 less -R
+```
+
 ## Submodules
 
 ### Cloning submodules
