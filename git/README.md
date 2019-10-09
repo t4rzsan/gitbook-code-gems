@@ -134,13 +134,13 @@ Show remote URL for "origin":
 git remote get-url origin
 ```
 
-For at bit information you may use:
+For at bit more information you may use:
 
 ```bash
 git remote show origin
 ```
 
-I your remote has moved, you can change the URL using _set-url_:
+If your remote has moved, you can change the URL using _set-url_:
 
 ```bash
 git remote set-url origin https://hocuspocus@bitbucket.org/myteam/myproject.git
