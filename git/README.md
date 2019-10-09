@@ -154,6 +154,12 @@ After creating a new local branch and adding files to it, you can push the whole
 git push -u origin feature_branch_name
 ```
 
+You can do the same using _set-origin_ like so.
+
+```text
+git push --set-upstream origin feature_branch_name
+```
+
 ## Delete branch
 
 Delete the remote branch:
