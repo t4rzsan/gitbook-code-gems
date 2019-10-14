@@ -249,11 +249,17 @@ Aliases can also be added directly to the config file.
     c = commit
 ```
 
-### Add annotated tags
+## Add annotated tags
 
 ```bash
 git tag -a v1.1 -m "Version 1.1"
 git push origin v1.1
+```
+
+## Track remote branch
+
+```text
+git checkout --track origin/name-of-remote-branch
 ```
 
 
