@@ -6,5 +6,5 @@
 * [Coding Standards](coding-standards/README.md)
   * [C\#](coding-standards/c.md)
   * [T-SQL](coding-standards/t-sql.md)
-* [Bash](bash.md)
+* [Terminal](terminal.md)
 

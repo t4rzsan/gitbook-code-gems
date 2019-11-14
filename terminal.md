@@ -1,4 +1,4 @@
-# Bash
+# Terminal
 
 ## User Defaults
 
@@ -67,6 +67,12 @@ username='stat -f%Su /dev/console'
 
 ```text
 tccutil reset AppleEvents
+```
+
+## Show codesign certificates
+
+```bash
+security find-identity -vp codesigning
 ```
 
 
