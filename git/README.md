@@ -60,6 +60,25 @@ Output from Git may have problems showing Danish letters, for example for `git b
 pager = LESSCHARSET=utf-8 less -R
 ```
 
+### Create an alias for a command
+
+If you are tired of typing long hard-to-forget commands you can create aliases.
+
+```bash
+git config --global alias.a "add ."
+git config --global alias.c "commit"
+```
+
+You can now just type `git a` to add unstaged files.
+
+Aliases can also be added directly to the config file.
+
+```text
+[alias]
+    a = add .
+    c = commit
+```
+
 ## Submodules
 
 ### Cloning submodules
@@ -228,25 +247,6 @@ A reset will leave changed files unstaged.
 git rm . -r --cached
 git add .
 git commit -m "Fixed untracked files"
-```
-
-## Create an alias for a command
-
-If you are tired of typing long hard-to-forget commands you can create aliases.
-
-```bash
-git config --global alias.a "add ."
-git config --global alias.c "commit"
-```
-
-You can now just type `git a` to add unstaged files.
-
-Aliases can also be added directly to the config file.
-
-```text
-[alias]
-    a = add .
-    c = commit
 ```
 
 ## Add annotated tags
