@@ -169,7 +169,9 @@ If your remote has moved, you can change the URL using _set-url_:
 git remote set-url origin https://hocuspocus@bitbucket.org/myteam/myproject.git
 ```
 
-## Push new local branch to remote
+## Branching
+
+### Push new local branch to remote
 
 After creating a new local branch and adding files to it, you can push the whole thing to remote.
 
@@ -177,13 +179,13 @@ After creating a new local branch and adding files to it, you can push the whole
 git push -u origin feature_branch_name
 ```
 
-You can do the same using _set-origin_ like so.
+You can do the same using _set-upstream_ like so.
 
 ```text
 git push --set-upstream origin feature_branch_name
 ```
 
-## Delete branch
+### Delete branch
 
 Delete the remote branch:
 
@@ -207,6 +209,26 @@ Delete the local branch:
 
 ```bash
 git branch -d <branch_name>
+```
+
+### Track remote branch
+
+```text
+git checkout --track origin/name-of-remote-branch
+```
+
+### Create and switch branch in one step
+
+As of Git 2.23 you can use
+
+```bash
+git switch new-branch
+```
+
+This is equivalent to
+
+```bash
+git checkout -b new-branch
 ```
 
 ## Delete local changes
@@ -260,11 +282,7 @@ git tag -a v1.1 -m "Version 1.1"
 git push origin v1.1
 ```
 
-## Track remote branch
-
-```text
-git checkout --track origin/name-of-remote-branch
-```
+## 
 
 
 
