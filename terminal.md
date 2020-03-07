@@ -94,6 +94,8 @@ You will now have a file called MyApp.plist.  Double-click it to open it in Xcod
 
 {% hint style="info" %}
 Pay special attention to the`BundleIsRelocatable` setting in the .plist file.  If this setting is true the installer will search for other installations of the .app file and if it finds any it will update the existing file instead of installation to the folder you have specified.
+
+Se this: [https://apple.stackexchange.com/questions/219123/pkgbuild-created-package-does-not-install-correctly?newreg=07f76994de9b4085bef2509004949ac3](https://apple.stackexchange.com/questions/219123/pkgbuild-created-package-does-not-install-correctly?newreg=07f76994de9b4085bef2509004949ac3)
 {% endhint %}
 
 ### Build
