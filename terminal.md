@@ -114,7 +114,7 @@ pkgbuild --root "./MyAppDeployment/" \
 
 This will create MyApp.pkg.  When installing the new .pkg file it will install MyApp.app to the Applications folder.
 
-### Signing
+### Sign
 
 Add the --sign flag if you want to sign the .pkg file.  The certificate needs to be an installer certificate name:
 
