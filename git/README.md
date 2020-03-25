@@ -222,7 +222,7 @@ git checkout --track origin/name-of-remote-branch
 As of Git 2.23 you can use
 
 ```bash
-git switch new-branch
+git switch -c new-branch
 ```
 
 This is equivalent to
