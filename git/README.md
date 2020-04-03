@@ -302,7 +302,7 @@ A reset will leave changed files unstaged.
 ```bash
 git rm . -r --cached
 git add .
-git commit -m "Fixed untracked files"
+git commit -m "Fix untracked files"
 ```
 
 ## Add annotated tags
