@@ -129,7 +129,9 @@ If there is a merge tool, you can start your merge tool \(set in the config file
 git mergetool
 ```
 
-## Compare to remote
+## Remote repo
+
+### Compare to remote
 
 Start by fetching all from the remote repo:
 
@@ -149,7 +151,35 @@ If you are happy with the results, you may merge the remote changes with the loc
 git merge
 ```
 
-## Get and set remote URL
+### Associate remote repo with local repo
+
+Start by adding the remote:
+
+```bash
+git remote add <remote> <remote-url>
+```
+
+For example:
+
+```bash
+git remote add origin https://github.com/mynick/myremoterepo.git
+```
+
+Then clone the remote into your local repo:
+
+```bash
+git clone https://github.com/mynick/myremoterepo.git
+```
+
+Now you are ready for more commits and push.
+
+If you somehow mess things up and get the dreaded "refusing to merge unrelated history", then try:
+
+```bash
+git pull --allow-unrelated-histories
+```
+
+### Change remote URL
 
 Show remote URL for "origin":
 
