@@ -124,25 +124,31 @@ pkgbuild --root "./MyAppDeployment/" \
          --install-location "/Applications" \
          --identifier "com.mydomain.MyApp.pkg" \
          --version "3.1.4" \
-         --sign "3rd Party Mac Developer Installer: MyCompany (F23456HVS)" \
+         --sign "3rd Party Mac Developer Installer: MyCompany" \
          MyApp.pkg
 ```
 
 ### Notarize
+
+The generated pkg file needs to be notarized by Apple.  Otherwise the end user might get the dreaded error "the app is from an unidentified developer" when running the pkg file.  You can upload files for notarization with `xcrun --notarize-app.`
 
 ```bash
 xcrun altool \
     --notarize-app \  
     --primary-bundle-id "com.eMailSignature.Xink.pkg" \
     --username "[Apple Id email]" \
-    --password "[App password for Apple Id" \
+    --password "[App password for Apple Id]" \
     --file Xink.pkg
 ```
 
+After uploading the file to the notarization service, you can check the history and status of uploads with `--notarization-history.`
+
 ```bash
 xcrun altool \
-    --notarization-history 0 -u "[Apple Id email]" -p "App password for Apple Id"
+    --notarization-history 0 -u "[Apple Id email]" -p "[App password for Apple Id]"
 ```
+
+When the notarization is done successfully, you need to stable your file before distributing it to end users.
 
 ```bash
 xcrun stapler staple "Xink.pkg"
