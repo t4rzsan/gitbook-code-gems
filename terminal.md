@@ -128,3 +128,29 @@ pkgbuild --root "./MyAppDeployment/" \
          MyApp.pkg
 ```
 
+### Notarize
+
+```bash
+xcrun altool \
+    --notarize-app \  
+    --primary-bundle-id "com.eMailSignature.Xink.pkg" \
+    --username "[Apple Id email]" \
+    --password "[App password for Apple Id" \
+    --file Xink.pkg
+```
+
+```bash
+xcrun altool \
+    --notarization-history 0 -u "[Apple Id email]" -p "App password for Apple Id"
+```
+
+```bash
+xcrun stapler staple "Xink.pkg"
+```
+
+
+
+
+
+
+
