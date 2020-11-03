@@ -69,6 +69,14 @@ username='stat -f%Su /dev/console'
 tccutil reset AppleEvents
 ```
 
+## Add app to login items
+
+You can use AppleScript to add an app to login items for automatic startup when you log into your Mac.  Run the AppleScript from Terminal with `osascript`.
+
+```bash
+osascript -e 'tell application "System Events" to make login item at end with properties {name:"Xink", path:"/Applications/Xink.app", hidden:false}'
+```
+
 ## Show codesign certificates
 
 ```bash
