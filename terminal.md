@@ -30,7 +30,7 @@ defaults delete com.emailsignature.Xink hideQuiMailInfobox
 
 ## Show real iCloud folder on desktop
 
-You may want to view the actual files in your iCloud folder \(also called "Mobile Documents". By default Finder won't let you view the files.
+You may want to view the actual files in your iCloud folder \(also called "Mobile Documents". By default Finder won't let you view the files.  This will create a folder on your desktop called "Real iCloud Drive".
 
 ```bash
 ln -s ~/Library/Mobile\ Documents/ ~/Desktop/Real\ iCloud\ Drive
