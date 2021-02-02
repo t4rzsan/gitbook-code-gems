@@ -149,6 +149,8 @@ xcrun altool \
     --file Xink.pkg
 ```
 
+Go to [https://appleid.apple.com/](https://appleid.apple.com/) to get an application password for your Apple Id.
+
 After uploading the file to the notarization service, you can check the history and status of uploads with `--notarization-history.`
 
 ```bash
