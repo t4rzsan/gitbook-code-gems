@@ -164,6 +164,12 @@ When the notarization is done successfully, you need to stable your file before 
 xcrun stapler staple "Xink.pkg"
 ```
 
+You can view the contents of the .pkg file with pkgutil:
+
+```bash
+pkgutil --expand Xink.pkg output/
+```
+
 
 
 
