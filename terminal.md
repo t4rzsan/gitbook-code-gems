@@ -141,7 +141,7 @@ pkgbuild --root "./MyAppDeployment/" \
 The generated pkg file needs to be notarized by Apple.  Otherwise the end user might get the dreaded error "the app is from an unidentified developer" when running the pkg file.  You can upload files for notarization with `xcrun --notarize-app.`
 
 ```bash
-xcrun altool --notarize-app --primary-bundle-id "io.Xink.macOS.pkg" --username [Apple Id email] --password [Apple Id password] --file Xink.pkg 
+xcrun altool --notarize-app --primary-bundle-id "io.emailsignature.com.pkg" --username [Apple Id email] --password [Apple Id password] --file Xink.pkg 
 ```
 
 Go to [https://appleid.apple.com/](https://appleid.apple.com/) to get an application password for your Apple Id.
